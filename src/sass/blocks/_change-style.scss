@@ -1,9 +1,9 @@
-.smallBusiness__title {
+.smallBusiness__title_private {
     margin-bottom: 48px;
     margin-top: 0;
 }
 
-.smallBusiness-banner {
+.smallBusiness__banner_private {
     background: linear-gradient(90deg, #F5F5F5 0%, #EDEDED 40%, rgba(234, 234, 234, 0) 65%), url('../img/banners/mortgage-1.jpg') 100% no-repeat;
     &:hover {
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
@@ -11,7 +11,7 @@
     transition: all 0.8s;
 }
 
-.smallBusiness-card {
+.smallBusiness-card_private {
     &:hover {
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
     }
@@ -21,6 +21,36 @@
     }
     &:nth-child(2) {
         background: linear-gradient(0, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0) 50%), url('../img/banners/carLoan-3.jpg');
+    }
+    &_change-size {
+        font-size: 28px;
+        line-height: 34px;
+        color: #333333;
+        font-weight: 600;
+        min-height: 0;
+    }
+    &__item-strong-text {
+        font-weight: 700;
+    }
+    &__list_without-before {
+        li {
+            padding-left: 35px;
+            font-size: 16px;
+            line-height: 37px;
+        }
+        li::before {
+            display: none;
+        }
+    }
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -61,4 +91,7 @@
 
 .white-color {
     color: #FFFFFF;
+    &:hover {
+        color: #FFFFFF;
+    }
 }
