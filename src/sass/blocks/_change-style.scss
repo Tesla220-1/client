@@ -22,6 +22,9 @@
     &:nth-child(2) {
         background: linear-gradient(0, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0) 50%), url('../img/banners/carLoan-3.jpg');
     }
+}
+
+.smallBusiness-card {
     &_change-size {
         font-size: 28px;
         line-height: 34px;
@@ -52,7 +55,22 @@
         width: 30px;
         height: 30px;
     }
+    &__list_currency-deposits {
+        .smallBusiness-card__icon {
+            top: 0;
+        }
+        .smallBusiness-card__item {
+            margin-bottom: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        li {
+            line-height: 25px;
+        } 
+    }  
 }
+
 
 .banners {
     &__item {
@@ -95,3 +113,134 @@
         color: #FFFFFF;
     }
 }
+
+.special-offers {
+    margin-top: 64px;
+    &__title {
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 0.5px;
+        color: #50B848;
+        margin-bottom: 48px;
+    }
+    &__cards-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {   
+        width: 315px;
+        height: 378px;
+        border-radius: 6px;
+        transition: all 0.8s;
+        padding: 24px 23px 15px 23px;
+        &:hover {
+            box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.2);
+        }
+        &-title {
+            font-family: 'Montserrat', 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            color: #333333;
+            margin-bottom: 11px;
+            border: none;
+        }
+        &-subtitle {
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #6BDE62;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 19px;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.5px;
+            color: #333333;
+        }
+    }
+    #world-of-discounds {
+        background: linear-gradient(145.22deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%), url('../img/special-offers/world-of-discounds-1.png') center center no-repeat;
+        .special-offers {
+            &__card {
+                &-title {
+                    display: block;
+                    font-weight: bold;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
+                    margin-bottom: 21px;
+                    width: 220px;
+                    &:hover {
+                        color: #50b848;
+                    }
+                }
+                &-subtitle {
+                    width: 215px;
+                }
+                &-text {
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    #grow-big {
+        background:url('../img/special-offers/grow-big-2.svg') center center no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .special-offers {
+            &__card {
+                &-title {
+                    width: 214px;
+                    font-weight: 600;
+                    font-size: 23px;
+                    line-height: 26px;
+                    margin-bottom: 0;
+                }
+                &-text {
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 15px;
+                    width: 200px;   
+                }
+            }
+        }
+    }
+    #realization-of-pledged-property {
+        background:linear-gradient(147.28deg, rgba(255, 255, 255, 0.7) -0.75%, rgba(255, 255, 255, 0) 84.26%), url('../img/special-offers/realization-of-pledged-property-3.png') center center no-repeat;
+    }
+}
+
+.load-statistics {
+    margin-top: 104px;
+    &__title {
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.5px;
+        color: #000000;
+    }   
+    &__content {
+        margin-top: 26px;
+        position: relative;
+        min-height: 457px;
+        img {
+            display: block;
+            position: absolute;
+            left: -50px;
+        }
+    }
+}
+
