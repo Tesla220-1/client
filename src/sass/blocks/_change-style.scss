@@ -266,3 +266,12 @@
 .card-item-text {
     letter-spacing: 0.5px;
 }
+
+.banner-strong-text {
+    font-size: 36px; 
+    line-height: 40px;
+    &__big-banner {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
