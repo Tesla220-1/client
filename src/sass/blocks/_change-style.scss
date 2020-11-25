@@ -261,6 +261,9 @@
 .more-info-link {
     font-size: 14px;
     line-height: 16px;
+    &_horizontal {
+        margin-top: 0;
+    }
 }
 
 .card-item-text {
